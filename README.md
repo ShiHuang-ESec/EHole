@@ -15,6 +15,8 @@
 
 ## 二、使用：
 
+配合[红队中易被攻击的一些重点系统漏洞整理]食用效果更佳：https://forum.ywhack.com/thread-114777-1-1.html
+
 ```bash
 EHole version: 0.0.1
 Usage: nginx [-f|-l] [parameter]
