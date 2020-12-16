@@ -18,15 +18,19 @@
 配合[红队中易被攻击的一些重点系统漏洞整理]食用效果更佳：https://forum.ywhack.com/thread-114777-1-1.html
 
 ```bash
-EHole version: 0.0.1
-Usage: nginx [-f|-l] [parameter]
+Ehole version: 0.0.2
+Usage: Ehole [-f|-l|] [parameter]
 
 Options:
   -f string
     	Fofa searches for assets , supports IP and IP segments。(192.168.1.1 | 192.168.1.0/24)
+  -ftime string
+    	fofa timeout (default "10")
   -h	this help
   -l string
     	Probe based on local file
+  -log string
+    	Log file name (default "server.log")
 ```
 
 EHole提供了**两种**指纹识别方式，可从本地读取识别，也可以从FOFA进行批量调用API识别(需要FOFA密钥)。
@@ -63,6 +67,12 @@ EHole -f 192.168.1.1/24  //支持单IP或IP段
 ![Xnip2020-12-04_14-50-38](images/Xnip2020-12-04_14-50-38.png)
 
 ## 四、更新：
+2020/12/16 更新列表：
+	1、添加多个指纹
+	2、优化识别规则
+	3、优化输出排版，把重点资产独立出来
+	4、新增日志功能，报错和输出都会写入日志文件，每次使用日志文件不会自动清空。
+
 2020/12/09 增加-ftime，fofa超时参数，优化部分指纹
 
 2020/12/04 上传Ehole
