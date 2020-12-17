@@ -19,18 +19,20 @@
 
 ```bash
 Ehole version: 0.0.2
-Usage: Ehole [-f|-l|] [parameter]
+Usage: Ehole [-f|-l] [parameter]
 
 Options:
   -f string
-    	Fofa searches for assets , supports IP and IP segments。(192.168.1.1 | 192.168.1.0/24)
+        Fofa searches for assets , supports IP and IP segments。(192.168.1.1 | 192.168.1.0/24)
   -ftime string
-    	fofa timeout (default "10")
-  -h	this help
+        fofa timeout (default "10")
+  -h    this help
   -l string
-    	Probe based on local file
+        Probe based on local file
   -log string
-    	Log file name (default "server.log")
+        Log file name (default "server.log")
+  -t string
+        thread (default "100")
 ```
 
 EHole提供了**两种**指纹识别方式，可从本地读取识别，也可以从FOFA进行批量调用API识别(需要FOFA密钥)。
@@ -69,6 +71,11 @@ EHole -f 192.168.1.1/24  //支持单IP或IP段
 ![Xnip2020-12-04_14-50-38](images/1608105869(1).jpg)
 
 ## 四、更新：
+2020/12/17 更新列表：
+	1、修复本地文件识别
+	修复乱码问题
+	新增线程 -t参数 默认100线程
+
 2020/12/16 更新列表：
 	1、添加多个指纹
 	2、优化识别规则
@@ -83,4 +90,5 @@ EHole -f 192.168.1.1/24  //支持单IP或IP段
 * Blackhold
 * puppy
 * amcai
+* lx
 
