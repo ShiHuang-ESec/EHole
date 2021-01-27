@@ -1,5 +1,5 @@
 # EHole(棱洞)-红队重点攻击系统指纹探测工具
-
+EHole 2.0发布了，指纹开源了，本项目地址不再更新，项目地址移至：https://github.com/EdgeSecurityTeam/EHole
 ## 一、简介：
 
 ```bash
